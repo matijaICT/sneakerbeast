@@ -86,6 +86,9 @@
     #about{
         height: auto;
     }
+    .video-holder{
+        top:104px;
+    }
     
     
 }
@@ -106,6 +109,7 @@
     width: 100%;
     border-top:2px solid #F9D064;
     border-bottom: 2px solid #F9D064;
+    top:100px;
 }
 #myLinks div{
 
