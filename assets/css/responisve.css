@@ -1,0 +1,144 @@
+@media (max-width: 962px) {
+    #autor {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    #autorSlika {
+        width: 100%;
+        order: 2;
+    }
+    #opisAutor {
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+}
+@media (max-width: 866px) {
+    .headerModal, .textModal {
+        font-size: 20px;
+    }
+}
+@media (max-width: 795px) {
+    #grid-container {
+        grid-template-columns: auto auto;
+    }
+    .scrollSpace {
+        height: 200px !important;
+    }
+    #formMap {
+        flex-wrap: wrap;
+    }
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .icon{
+        display: block !important;
+    }
+    #meniNav{
+        display: none;
+    }
+    #formMap{
+        display: block !important;
+    }
+    #slika1 img{
+        margin-top: 100px;
+        width: 50vh;
+        margin-left: 20px;
+    }
+    #slika1{
+        margin-top: auto;
+    }
+    #slika1 img{
+        width: 380px;
+    }
+    #slika2{
+        display: block;
+    }
+    #slika2 img{
+        width: 380px;
+    }
+    #slike{
+        display: block;  
+        text-align: center;
+    }
+
+    #timjpg{
+        display: block;
+        margin-bottom: 0;
+    }
+
+    #section{
+        display: block;
+    }
+    #about{
+        height: auto;
+    }
+    
+    
+}
+
+.icon{
+    margin-right: 0;
+    margin-top: 10%;
+    text-align: center;
+    display:none;
+
+}
+#myLinks{
+    display:none;
+    background-color: #555555;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    border-top:2px solid #F9D064;
+    border-bottom: 2px solid #F9D064;
+}
+#myLinks div{
+
+    margin: 10px;
+   
+}
+#myLinks div a{
+    text-decoration: none;
+    color: #F9D064;
+}
+#text{
+    text-align: center;
+}
+@media (max-width: 880px) {
+
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+
+
