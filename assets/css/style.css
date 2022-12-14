@@ -23,7 +23,7 @@ header{
     width: 100%;
     display: flex;
     background-color: #555555;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
     
