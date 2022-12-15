@@ -133,39 +133,42 @@ function ValidateEmail(input) {
 }
 
 var nizSlikaGalerija =[
-  {naslov : "Lowlz",
-    slika : "./assets/img/af1.jpg",
-    tekst : "Air Force 1"},
+  {naslov : "Nike",
+    slika : "./assets/img/gal1.jpg",
+    tekst : "Air Force 1"
+  },
     
-  {naslov : "Matt",
-    slika : "./assets/img/matt.webp",
-    tekst : "Founder / Director"},
+  {naslov : "Adidas",
+    slika : "./assets/img/gal3.jpg",
+    tekst : "Yeezy 350"},
 
-  {naslov : "Kelvin",
-    slika : "./assets/img/kelvin.webp",
-    tekst : "Videographer / Creative"},
-    {naslov : "Lowlz",
-    slika : "./assets/img/af1.jpg",
-    tekst : "Air Force 1"},
+  {naslov : "Air Jordan 3",
+    slika : "./assets/img/jordan.jpg",
+    tekst : "Tiffany"},
     
-  {naslov : "Matt",
-    slika : "./assets/img/matt.webp",
-    tekst : "Founder / Director"},
-
-  {naslov : "Kelvin",
-    slika : "./assets/img/kelvin.webp",
-    tekst : "Videographer / Creative"},
-    {naslov : "Lowlz",
-    slika : "./assets/img/af1.jpg",
-    tekst : "Air Force 1"},
+  {naslov : "Nike",
+    slika : "./assets/img/giphy2.gif",
+    tekst : "Just do it"},
     
-  {naslov : "Matt",
-    slika : "./assets/img/matt.webp",
-    tekst : "Founder / Director"},
+  {naslov : "Adidas",
+    slika : "./assets/img/adidas2.gif",
+    tekst : "Impossible Is Nothing"},
 
-  {naslov : "Kelvin",
-    slika : "./assets/img/kelvin.webp",
-    tekst : "Videographer / Creative"},
+  {naslov : "Air Jordan",
+    slika : "./assets/img/jordan.gif",
+    tekst : "The key to success is failure"},
+    
+  {naslov : "Air Jordan 1",
+    slika : "./assets/img/gal2.jpg",
+    tekst : "'AIR'"},
+    
+  {naslov : "Adidas",
+    slika : "./assets/img/kaws.jpg",
+    tekst : "Yeezy 350 x KAWS"},
+
+  {naslov : "Air Jordan 1 ",
+    slika : "./assets/img/jordan3.webp",
+    tekst : "What the dunks"},
 
 ]
 

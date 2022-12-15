@@ -8,7 +8,6 @@
         <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -20,7 +19,7 @@
        <header>
         
             <div id="logo">
-                <a href="index.html"><img src="./assets/img/logo.png"></a>
+                <a href="index.html"><img src="./assets/img/logo.png" alt="logo image"></a>
             </div>
 
             <nav id="meniNav">
@@ -47,7 +46,7 @@
         <div class="video-holder">
             <div id="video">
                 <video autoplay muted loop id="video">
-                      <source src="./assets/img/video.mp4" type="video/mp4">
+                      <source src="./assets/img/video.mp4" type="video/mp4" alt="video">
                     </video>
               </div>
       
@@ -67,7 +66,7 @@
 
         <div id="section">
             <div class="scrollNav" id="about">
-                <div class="scrollSpace" style="height: 120px;">
+                <div class="scrollSpace" style="height: 70px;">
                 </div>
                 <div id="podnaslov">
                     <h2>About us</h2>
@@ -103,22 +102,22 @@
               
 
             <div class="scrollNav" id="work">
-                <div class="scrollSpace" id="gradient" style="height: 100px;">
+                <div class="scrollSpace" id="gradient" style="height:100px;">
                 </div>                
                 <div class="rotateslider-container" id="slider">
                     <h1>Most popular work</h1>
-                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika1.jpg"></div>
-                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika2.jpg"></div>
-                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika3.jpg"></div>
-                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika4.jpg"></div>
-                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika5.jpg"></div>
+                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika1.jpg" alt="Patika1"></div>
+                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika2.jpg" alt="Patika2"></div>
+                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika3.jpg" alt="Patika3"></div>
+                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika4.jpg" alt="Patika4"></div>
+                    <div class="rotateslider-item"><img id="imgItem" src="./assets/img/patika5.jpg "alt="Patika5"></div>
                     <span class="arrow right js-rotateslider-arrow" data-action="next"><i class="fa fa-angle-right fa-3x"></i></span>
                     <span class="arrow left js-rotateslider-arrow" data-action="prev"><i class="fa fa-angle-left fa-3x"></i></span>
 
                 </div>
               
             </div>
-            <div class="scrollNav"  id="galery" style="height:1000px ; background-color:rgba(40, 38, 38, 0.711)">
+            <div class="scrollNav"  id="galery">
                 <div style="height: 100px;">
                 </div>
                 <div id="podnaslov">
@@ -131,7 +130,7 @@
 
                 </div>
                 <div id="myModal" class="modal">
-                     <!-- Modal content -->
+                     
                 <div class="modal-content">
                     <div class="modal-header">
                     <span class="close">&times;</span>
@@ -149,36 +148,13 @@
                 </div>
                 </div>
 
-                
-                <!-- <div id="opisSlika">
-                    <div class="opisGilja">
-                        <p>Custom Air Force 1 sneakers are a popular and unique way to personalize the classic Nike shoe. 
-                            These sneakers can be customized with a variety of colors, patterns, and designs, 
-                            allowing the wearer to create a one-of-a-kind look..</p>
-                    </div>
-                    <div class="opisGilja">
-                        <p>Custom Air Force 1 sneakers are a popular and unique way to personalize the classic Nike shoe. 
-                            These sneakers can be customized with a variety of colors, patterns, and designs, 
-                            allowing the wearer to create a one-of-a-kind look. .</p>
-                    </div>
-                    <div class="opisGilja">
-                        <p>Custom Air Force 1 sneakers are a popular and unique way to personalize the classic Nike shoe. 
-                            These sneakers can be customized with a variety of colors, patterns, and designs, 
-                            allowing the wearer to create a one-of-a-kind look. .</p>
-                    </div>
-
-                </div> -->
-
-
-
-
             </div>
             <div class="scrollNav" id="contact">
                 <div class="scrollSpace" style="height: 100px;">
                 </div>
                 <div id="formMap" style="display: flex;">
                     <div id="container">
-                        <h1 class="hMenu">&bull; Keep in Touch &bull;</h1>
+                        <h1 class="hMenu">&bull; Contact us &bull;</h1>
                         <div class="underline">
                         </div>
                         <div class="icon_wrapper">
@@ -205,11 +181,19 @@
                             <textarea name="message" placeholder="Share your thoughts with us " id="message_input" cols="30" rows="5" required></textarea>
                           </div>
                           <div>
-                            <select>
-                                <option value="Option 1">Reparation</option>
-                                <option value="Option 2">Option 2</option>
-                                <option value="Option 3">Option 3</option>
-                              </select>
+                            <div include="form-input-select()">
+                                <select required>
+                                  
+                                  <option value=""hidden>Choose your service</option>
+                              
+                                 
+                                  <option value="1">Painting</option>
+                                  <option value="2">Cleaning</option>
+                                  <option value="3">Sole repair</option>
+                                  <option value="4">Mid sole painting</option>
+                                  <option value="5">All of the above</option>
+                                </select>
+                              </div>
                           </div>
                           <div class="submit">
                             <input type="submit" value="Send Message" onclick="formSubmit()" id="form_button" />
@@ -220,19 +204,25 @@
 
                     <div id="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.439704714437!2d-118.35709488478408!3d34.08387458059731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bed3ab6b19fd%3A0xc3020812fc919b7d!2sCoolKicks!5e0!3m2!
-                        1ssr!2srs!4v1670521744903!5m2!1ssr!2srs" width="800px" height="725px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                        1ssr!2srs!4v1670521744903!5m2!1ssr!2srs"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
                     </div>
 
                 </div>
                
             </div>
-            
+           
+            </div>
             <div id="autor">
-                <!-- <div id="naslov">
-                    <p>Author</p>
-                    
-
-                </div> -->
+                <div id="opisAutor">
+                    <div id="autorNaslov">
+                            <p>Author</p>
+                    </div>
+                    <p>My name is Matija Čalić, I am 22 years old. At the age of 5, 
+                        I got my first computer and since then I have become interested in everything that goes with it.
+                         I was the most active student in computer science classes, and a professor at my high school recommended ICT to me.
+                         I am currently a third year student. 
+                         I strive to one day be successfully employed in an IT company</p>
+                </div>
                 
                 <div id ="autorSlika">
 
@@ -240,14 +230,7 @@
                     <img src="./assets/img/author.jpg" alt="slika autora"/>
 
                 </div>
-                <div id="opisAutor">
-
-                    <p>My name is Matija Čalić, I am 21 years old. At the age of 5, 
-                        I got my first computer and since then I have become interested in everything that goes with it.
-                         I was the most active student in computer science classes, and a professor at my high school recommended ICT to me.
-                         I am currently a third year student. 
-                         I strive to one day be successfully employed in an IT company</p>
-                </div>
+                
 
             </div>  
         </div>  
@@ -306,10 +289,9 @@
 
         <div class="footer-icons">
 
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="rss.xml"><i class="fa fa-rss"></i></a>
+          <a href="sitemap.xml"><i class="fa fa-sitemap"></i></a>
+          <a href="Dokukmentacija.pdf"><i class="fa fa-file"></i></a>
 
         </div>
 
