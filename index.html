@@ -10,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <title>SneakerBeast</title>
         <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
@@ -39,7 +41,7 @@
             <div><a href="#home">Home</a></div>
             <div><a href="#about">About us</a></div>
             <div><a href="#work">Our work</a></div>
-            <div><a href="#galery">Galery</a></div>
+            <div><a href="#galery">Gallery</a></div>
             <div><a href="#contact">Contact</a></div>
             <div><a href="#author">Author</a></div>
         </div>
@@ -121,7 +123,7 @@
                 <div style="height: 100px;">
                 </div>
                 <div id="podnaslov">
-                    <h2>Galery</h2>
+                    <h2>Gallery</h2>
 
                 </div>
                 <div id="grid-container">
@@ -162,29 +164,29 @@
                         </div>
                         <form action="#" method="post" id="contact_form">
                           <div id="nameDiv" class="name">
-                            <label for="name"></label>
-                            <input type="text" placeholder="Name" name="name" id="name_input" required>
+                            
+                            <input type="text" placeholder="Name" name="name" id="name_input" autocomplete="on" required>
                           </div>
                           <div id="emailDiv" class="email">
-                            <label for="email"></label>
-                            <input type="email" placeholder="E-mail" name="email" id="email_input" required>
+                            
+                            <input type="email" placeholder="E-mail" name="email" id="email_input" autocomplete="on" required>
                           </div>
                           
                           <div id="phoneDiv" class="telephone">
-                            <label for="name"></label>
+                            
                             <input type="text" placeholder="Number" name="telephone" id="telephone_input" required>
                           </div>
                           
                           
                           <div id="messageDiv" class="message">
-                            <label for="message"></label>
+                            
                             <textarea name="message" placeholder="Share your thoughts with us " id="message_input" cols="30" rows="5" required></textarea>
                           </div>
                           <div>
-                            <div include="form-input-select()">
-                                <select required>
+                            <div include="form-input-select()" id="ddDiv">
+                                <select id="dd" required>
                                   
-                                  <option value=""hidden>Choose your service</option>
+                                  <option value="0"hidden>Choose your service</option>
                               
                                  
                                   <option value="1">Painting</option>
@@ -204,7 +206,7 @@
 
                     <div id="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.439704714437!2d-118.35709488478408!3d34.08387458059731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bed3ab6b19fd%3A0xc3020812fc919b7d!2sCoolKicks!5e0!3m2!
-                        1ssr!2srs!4v1670521744903!5m2!1ssr!2srs"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                        1ssr!2srs!4v1670521744903!5m2!1ssr!2srs"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>
@@ -217,10 +219,9 @@
                     <div id="autorNaslov">
                             <p>Author</p>
                     </div>
-                    <p>My name is Matija Čalić, I am 23 years old. At the age of 5, 
+                    <p>My name is Matija Čalić, I am 24 years old. At the age of 5, 
                         I got my first computer and since then I have become interested in everything that goes with it.
-                         I was the most active student in computer science classes, and a professor at my high school recommended ICT to me.
-                         I am currently a third year student. 
+                         I was the most active student in computer science classes, and a professor at my high school recommended ICT to me.                          
                          I strive to one day be successfully employed in an IT company</p>
                 </div>
                 
@@ -249,7 +250,7 @@
         
           <a href="#work">Our work</a>
         
-          <a href="#galery">Galery</a>
+          <a href="#galery">Gallery</a>
           
           <a href="#contact">Contact</a>
           
@@ -294,7 +295,7 @@
           <a href="Dokukmentacija.pdf"><i class="fa fa-file"></i></a>
 
         </div>
-
+        <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
       </div>
 
     </footer>
